@@ -1,0 +1,53 @@
+========== CLOCK ==========
+.clock__day-week
+Saturday
+
+.clock__month
+May
+
+.clock__day
+28,
+
+.clock__year
+2023
+
+.clock__text-hour
+12:
+
+.clock__text-minutes
+25
+
+.clock__text-ampm
+PM
+
+========== CLOCK JS ==========
+// We get the Date object
+
+// We get the hours and minutes 
+// (current time) / 12(hours) * 360(deg circle)
+// (Current minute) / 60(minutes) * 360(deg circle)
+
+// We add a rotation to the elements
+
+// (Updates every 1s) 1000 = 1s 
+
+
+// We get the Date object
+
+// We get the time and date
+
+// We get the days of the week and the months. (First day of the week Sunday)
+   ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+   ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+// We add the corresponding dates
+
+// If hours is greater than 12 (afternoon), we subtract -12, so that it starts at 1 (afternoon)
+
+// When it is 0 hours (early morning), we tell it to change to 12 hours
+
+// If hours is less than 10, add a 0 (01,02,03...09)
+
+// If minutes is less than 10, add a 0 (01,02,03...09)
+
+// (Updates every 1s) 1000 = 1s
