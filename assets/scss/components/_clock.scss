@@ -1,0 +1,81 @@
+/*=============== CLOCK ===============*/
+.container{
+   height: 100vh;
+   display: grid;
+   place-items: center;
+   margin-inline: 1.5rem;
+}
+
+.clock{
+   width: 100%;
+   height: 176px;
+   background-color: var(--container-color);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   column-gap: 1rem;
+   border: 3px solid var(--black-color);
+   border-radius: 10rem;
+   box-shadow: 6px 6px 0 hsl(0, 0%, 65%), 
+               12px 12px 0 hsl(75, 4%, 18%),
+               inset 10px 10px 0 hsl(0, 0%, 75%),
+               inset 11px 11px 0 hsl(75, 4%, 65%);
+
+   &__circle{
+      position: relative;
+      width: 100px;
+      height: 100px;
+      border: 3px solid var(--black-color);
+      background-color: var(--container-color);
+      border-radius: 50%;
+      box-shadow: inset 2px 2px 8px hsla(0, 0%, 0%, .4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   &__rounder{
+      width: 6px;
+      height: 6px;
+      background-color: var(--black-color);
+      border-radius: 50%;
+      box-shadow: 0 0 6px hsla(0, 0%, 0%, .25);
+      z-index: 2;
+   }
+   &__hour{
+      width: 2px;
+      height: 25px;
+      background-color: var(--red-color);
+   }
+   &__minutes{
+      width: 2px;
+      height: 38px;
+      background-color: var(--red-color);
+   }
+   &__hour,
+   &__minutes{
+      box-shadow: 0 0 6px hsla(0, 0%, 0%, .25);
+      position: absolute;
+      bottom: 50%;
+      transform-origin: bottom;
+   }
+   &__date{
+      display: grid;
+      row-gap: .25rem;
+      border-bottom: 1px solid var(--text-color-light);
+      padding-bottom: .5rem;
+      margin-bottom: 1rem;
+   }
+   &__day-week,
+   &__text-ampm{
+      font-size: var(--small-font-size);
+      font-weight: 500;
+   }
+   &__month,
+   &__day,
+   &__year,
+   &__text-hour,
+   &__text-minutes{
+      font-size: var(--h2-font-size);
+      font-weight: 600;
+   }
+}

@@ -1,0 +1,67 @@
+/*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 340px){
+   .clock{
+      width: 176px;
+      height: 328px;
+      flex-direction: column;
+      row-gap: 1.5rem;
+      text-align: center;
+      padding-left: .8rem;
+   }
+}
+
+/* For medium devices */
+@media screen and (min-width: 450px){
+   .clock{
+      width: 380px;
+      height: 190px;
+      column-gap: 2rem;
+   }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px){
+   .clock{
+      width: 602px;
+      height: 306px;
+      border: 4px solid var(--black-color);
+      box-shadow: 15px 15px 0 hsla(0, 0%, 65%),
+                  30px 30px 0 hsla(75, 4%, 18%),
+                  inset 16px 16px 0 hsla(0, 0%, 75%),
+                  inset 18px 18px 0 hsl(75, 4%, 65%);
+      column-gap: 3rem;
+
+      &__circle{
+         width: 170px;
+         height: 170px;
+         border: 4px solid var(--black-color);
+      }
+      &__rounder{
+         width: 8px;
+         height: 8px;
+      }
+      &__minutes{
+         width: 3px;
+         height: 62px;
+      }
+      &__hour{
+         width: 3px;
+         height: 40px;
+      }
+      &__date{
+         margin-bottom: 1.5rem;
+      }
+      &__day-week,
+      &__text-ampm{
+         font-size: var(--h2-font-size);
+      }
+      &__month,
+      &__day,
+      &__year,
+      &__text-hour,
+      &__text-minutes{
+         font-size: var(--h1-font-size);
+      }
+   }
+}
